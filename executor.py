@@ -1,12 +1,10 @@
 from modules.viewInstagram import *
-from random import randint
 
 if __name__ == '__main__':
-    quantidade_execucoes = randint(48, 77)
+    quantidade_execucoes = 30
 
     openInstagram = InstagramBot()
     i = 0
-    print(f"Quantidade de vezes a executar: {quantidade_execucoes}.")
     # Execuções dos videos
     while i < quantidade_execucoes:
         print("Execução: " + str(i + 1))

@@ -26,11 +26,7 @@ class InstagramBot:
             for video in self.carrega_reels():
                 driver.get(video)  # abre o video do indice atual
                 print(f"Assistindo o video: {video}.")
-                time.sleep(3)
-                mouse = Controller()
-                mouse.position = (433, 398)  # posiciona ponteiro do mouse no botão de play
-                mouse.click(Button.left, 1)  # clica no posicionamento acima para iniciar o video
-                time.sleep(3)  # Tempo que irá assistir o video
+                time.sleep(2)  # Tempo que irá assistir o reels
         except:
             driver = self.driver
             driver.close()
