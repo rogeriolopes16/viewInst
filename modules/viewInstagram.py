@@ -26,7 +26,7 @@ class InstagramBot:
             for video in self.carrega_reels():
                 driver.get(video)  # abre o video do indice atual
                 print(f"Assistindo o video: {video}.")
-                time.sleep(2)  # Tempo que irá assistir o reels
+                time.sleep(2)  # Tempo que irá assistir o reelsgir
         except:
             driver = self.driver
             driver.close()
